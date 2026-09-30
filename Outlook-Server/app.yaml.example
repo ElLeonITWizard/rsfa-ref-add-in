@@ -1,0 +1,15 @@
+runtime: nodejs20
+service: default
+entrypoint: node ./bin/www
+env: standard
+
+env_variables:
+  CLIENT_ID: "EXAMPLE_CLIENT_ID"
+  CLIENT_SECRET: "EXAMPLE_CLIENT_SECRET"
+  TENANT_ID: "EXAMPLE_TENANT_ID"
+  API_KEY: "EXAMPLE_API_KEY"
+  SITE_ID: "EXAMPLE_SITE_ID"
+  DRIVE_ID: "EXAMPLE_DRIVE_ID"
+  NODE_ENV: "production"
+  SERVER_SOURCE: "https://localhost:4000"
+  PORT: "4000"

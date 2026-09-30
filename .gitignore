@@ -1,0 +1,18 @@
+# Environment / secrets
+**/.env
+**/.env.local
+**/.env.production
+**/.env.development
+
+# Local deployment config containing secrets
+Outlook-Server/app.yaml
+
+# Private keys / certificates
+**/*.pem
+**/*.key
+**/*.pfx
+**/*.p12
+
+# Safe templates can still be committed
+!**/.env.example
+!Outlook-Server/app.yaml.example

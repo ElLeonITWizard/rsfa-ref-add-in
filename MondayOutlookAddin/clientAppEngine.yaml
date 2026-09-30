@@ -1,0 +1,11 @@
+runtime: python39
+service: default
+
+handlers:
+  - url: /
+    static_files: dist/taskpane.html
+    upload: dist/taskpane.html
+
+  - url: /(.*)
+    static_files: dist/\1
+    upload: dist/(.*)
